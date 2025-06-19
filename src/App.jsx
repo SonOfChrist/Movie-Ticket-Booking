@@ -7,7 +7,7 @@ import SeatLayout from './pages/SeatLayout';
 import Favorite from './pages/Favorite';
 import MyBookings from './pages/MyBookings';
 import Footer from './components/Footer';
-import {Toaster} from 'react-hot-toast';
+import { Toaster } from 'react-hot-toast';
 import { Route, Routes, useLocation } from 'react-router-dom';
 
 const App = () => {

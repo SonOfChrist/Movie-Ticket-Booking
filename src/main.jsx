@@ -5,6 +5,7 @@ import './index.css';
 import App from './App.jsx';
 
 createRoot(document.getElementById('root')).render(
+  // Wrapping the App component with BrowserRouter to enable routing
   <BrowserRouter>
     <App />
   </BrowserRouter>,
