@@ -2,9 +2,10 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { dummyDateTimeData, dummyShowsData } from '../assets/assets'
 import { useEffect, useState } from 'react'
-import BlurCircle from '../components/BlurCircle'
 import { Heart, PlayCircleIcon, StarIcon } from 'lucide-react'
+import DateSelect from '../components/DateSelect'
 import timeFormat from '../lib/timeFormat'
+import BlurCircle from '../components/BlurCircle'
 
 const MovieDetails = () => {
   const {id} = useParams()
@@ -42,7 +43,7 @@ const MovieDetails = () => {
               <PlayCircleIcon className="w-5 h-5" />
               Watch Trailer
             </button>
-            <a href="#dateSelected" className='px-10 py-3 text-sm bg-primary hover:bg-primary-dull transition rounded-md font-medium cursor-pointer active:scale-95'>Buy Tickets</a>
+            <a href="#dateSelect" className='px-10 py-3 text-sm bg-primary hover:bg-primary-dull transition rounded-md font-medium cursor-pointer active:scale-95'>Buy Tickets</a>
             <button className='bg-gray-700 p-2.5 rounded-full transition cursor-pointer active:scale-95'>
               <Heart className={`w-5 h-5`} />
             </button>
@@ -62,6 +63,7 @@ const MovieDetails = () => {
           ))}
         </div>
       </div>
+      <DateSelect dateTime={show.dateTime} id={id} />
     </div>
   ) : (
     <div>Loading...</div>
