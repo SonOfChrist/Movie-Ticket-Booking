@@ -2,9 +2,11 @@ import { StarIcon } from 'lucide-react';
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import timeFormat from '../lib/timeFormat';
+
+// This component displays a movie card with details such as title, release date, genres, runtime, and rating.
 const MovieCard = ({movie}) => {
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <div className='flex flex-col justify-between p-3 bg-gray-800 rounded-2xl hover:-translate-y-1 transition duration-300 w-66'>
