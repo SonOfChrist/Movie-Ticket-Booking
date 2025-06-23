@@ -8,6 +8,7 @@ import MovieCard from '../components/MovieCard'
 import DateSelect from '../components/DateSelect'
 import timeFormat from '../lib/timeFormat'
 import BlurCircle from '../components/BlurCircle'
+import Loading from '../components/Loading'
 
 const MovieDetails = () => {
   const navigate = useNavigate()
@@ -80,9 +81,7 @@ const MovieDetails = () => {
         <button onClick={()=> {navigate('/movies'); scrollTo(0,0)}} className='px-10 py-3 text-sm bg-primary hover:bg-primary-dull transition rounded-md font-medium cursor-pointer'>Show More</button>
       </div>
     </div>
-  ) : (
-    <div>Loading...</div>
-  )
+  ) : <Loading />
 }
 
 export default MovieDetails
