@@ -10,23 +10,23 @@ const Footer = () => {
     const handleSubscribe = (e) => {
         e.preventDefault();
         setError('');
-        // Simple email validation
+        // Simple email validation {Create a complex email validation system application}
         if (!email || !/\S+@\S+\.\S+/.test(email)) {
           setError('Please enter a valid email address.');
           return;
         }
         setSubscribed(true);
         setEmail('');
-        // Add API call for real subscription
+        // Add API call for real subscription later after the project
       };
 
     return (
 
-        <footer className="px-6 md:px-16 lg:px-36 mt-20 w-full text-gray-200 bg-gradient-to-r from-black via-primary/80 to-pink-900/80 rounded-t-3xl shadow-2xl">
-            <div className="flex flex-col md:flex-row justify-between w-full gap-10 border-b border-gray-700 pb-14 pt-10">
+        <footer className="px-6 md:px-16 lg:px-36 mt-10 w-full text-gray-200 bg-gradient-to-r from-black via-primary/80 to-pink-900/80 rounded-t-3xl shadow-2xl">
+            <div className="flex flex-col md:flex-row justify-between w-full gap-10 border-b border-gray-700 pb-7 pt-10">
                 <div className="md:max-w-96">
                     <img className="w-36 h-auto drop-shadow-xl" src={assets.logo} alt="QuickShow Logo" />
-                    <p className="mt-6 text-base font-medium  text-gray-300">
+                    <p className="mt-3 text-base font-medium  text-gray-300">
                         QuickShow is your ultimate movie ticket companion—discover, book, and enjoy the latest blockbusters with ease. Experience seamless booking, exclusive offers, and a world of entertainment at your fingertips!
                     </p>
                     <div className="flex items-center gap-3 mt-6">
@@ -36,15 +36,10 @@ const Footer = () => {
 
                 {/* Social Media Links */}
                 <div className="flex items-center gap-4 mt-6">
-                    <a href="https://Instagram.com" target="_blank" rel="" aria-label="Instargarm">
-                    <img src={assets.Instagram_icon} alt="Instagram" className="h-6 w-6 hover:scale-110 transition" />
-                    </a>
-                    <a href="https://facebook.com" target="_blank" rel="" aria-label="facebook">
-                    <img src={assets.Facebook_icon} alt="Facebook" className="h-6 w-6 hover:scale-110 transition" />
-                    </a>
-                    <a href="https://X.com" target="_blank" rel="" aria-label="X">
-                    <img src={assets.X_icon_2} alt="X" className="h-6 w-6 hover:scale-110 transition" />
-                    </a>
+                    <a href="https://Instagram.com" target="_blank" rel="" aria-label="Instargarm"><img src={assets.Instagram_icon} alt="Instagram" className="h-6 w-6 hover:scale-110 transition" /></a>
+                    <a href="https://facebook.com" target="_blank" rel="" aria-label="facebook"><img src={assets.Facebook_icon} alt="Facebook" className="h-6 w-6 hover:scale-110 transition" /></a>
+                    <a href="https://X.com" target="_blank" rel="" aria-label="X"><img src={assets.X_icon_2} alt="X" className="h-6 w-6 hover:scale-110 transition" /></a>
+                    <a href="https://tiktok.com" target="_blank" rel="" aria-label="tiktok"><img src={assets.tiktok_icon_black} alt="tiktok" className="h-6 w-6 hover:scale-110 transition" /></a>
                 </div>
 
                 {/* Newsletter Signup */}
@@ -96,7 +91,7 @@ const Footer = () => {
 
           {/* App Version */}
           <p className="text-center text-xs text-gray-900 mt-2">v7.0.0</p>
-          <p className="pt-6 text-center text-sm text-gray-400 pb-6 tracking-wide">
+          <p className="pt-2 text-center text-sm text-gray-400 pb-6 tracking-wide">
             © {new Date().getFullYear()} QuickShow Movie Ticket App. Crafted with <span className="text-blue-400">Love</span> by MochogeStanley.
           </p>
 

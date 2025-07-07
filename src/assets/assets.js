@@ -7,6 +7,7 @@ import profile from './profile.png'
 import X_icon_2 from './X_icon_2.svg.png'
 import Facebook_icon from './Facebook_icon.svg.png'
 import Instagram_icon from './Instagram_icon.png.webp'
+import tiktok_icon_black from './tiktok_icon_black.svg'
 
 export const assets = {
     logo,
@@ -17,7 +18,8 @@ export const assets = {
     profile,
     X_icon_2,
     Facebook_icon,
-    Instagram_icon
+    Instagram_icon,
+    tiktok_icon_black
 }
 
 export const dummyTrailers = [
