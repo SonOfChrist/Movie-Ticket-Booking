@@ -4,6 +4,9 @@ import googlePlay from './googlePlay.svg'
 import appStore from './appStore.svg'
 import screenImage from './screenImage.svg'
 import profile from './profile.png'
+import X_icon_2 from './X_icon_2.svg.png'
+import Facebook_icon from './Facebook_icon.svg.png'
+import Instagram_icon from './Instagram_icon.png.webp'
 
 export const assets = {
     logo,
@@ -11,7 +14,10 @@ export const assets = {
     googlePlay,
     appStore,
     screenImage,
-    profile
+    profile,
+    X_icon_2,
+    Facebook_icon,
+    Instagram_icon
 }
 
 export const dummyTrailers = [
