@@ -3,13 +3,14 @@ Welcome to the **Movie Ticket APP**!
 Created by **Stanley Mochoge** 
 
 ---
-## 🚀 Features
-- **Amazon Buying & Payment Structure**  
-  <img src="./public/Movie Ticket App Home Page.png" alt="MovieTicketApp" width="700">
+## 🚀 User/Profile
+- **Movie TicketApp**  
+  <img src="./public/Movie Ticket App Home Page.png" alt="MovieTicketApp" width="900">
 ---
 ## 🛠️ Quick Start
 1. **Run the project**
     - npm run dev
+    - install all npm packages
 ---
 ## 👨‍💻 Author
 <p align="center">
