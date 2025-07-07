@@ -28,10 +28,11 @@ const MovieDetails = () => {
     getShow() 
   }, [id])
 
+  {/*Movie deatails */}
   return show ? (
     <div className='px-6 md:px-16 xl:px-40 pt-30 mb:pt-50'>
       <div className='flex flex-col md:flex-row gap-8 max-w-6xl mx-auto'>
-        <img src={show.movie.poster_path} alt=""  className='max-md:mx-auto rounded-xl h-104 max-w-70 object-cover'/>
+        <img src={show.movie.poster_path} alt={show.movie.title}  className='max-md:mx-auto rounded-xl h-104 max-w-70 object-cover'/>
         <div className='relative flex flex-col gap-3'>
           <BlurCircle top='-100px' left='-100px' />
           <p className='text-primary'>ENGLISH</p>
@@ -42,7 +43,7 @@ const MovieDetails = () => {
           </div>
           <p className='text-gray-400 mt-2 text-sm leading-tight max-w-xl'>{show.movie.overview}</p>
           <p>
-            {timeFormat(show.movie.runtime)}.{show.movie.genres.map(genre => genre.name).join(", ")} . {show.movie.release_date.split("-")[0]}
+            {timeFormat(show.movie.runtime)} . {show.movie.genres.map(genre => genre.name).join(", ")} . {show.movie.release_date.split("-")[0]}
           </p>
           <div className='flex items-center flex-wrap gap-4 mt-4'>
             <button className='flex items-center flex-wrap gap-4 px-7 py-3 text-sm bg-gray-800 hover:bg-gray-900 transition rounded-md font-medium cursor-pointer active:scale-95'>
@@ -58,7 +59,8 @@ const MovieDetails = () => {
         </div>
       </div>
 
-      <p className='text-lg font-medium mt-20'>Your Favorite Cast</p>
+      {/* Cast from the DummycastData information */}
+      <p className='text-lg font-medium mt-20'>Your Favorite Cast or Movie Actors</p>
       <div className='overflow-x-auto no-scrollbar mt-8 pb-4 '>
         <div className='flex items-center gap-4 w-max px-4'>
           {show.movie.casts.slice(0, 12).map((cast, index)=> (
@@ -69,15 +71,18 @@ const MovieDetails = () => {
           ))}
         </div>
       </div>
+
+      {/* Choosing Date to book the movies (chooosing a booking data) */}
       <DateSelect dateTime={show.dateTime} id={id} />
 
-      <p className='text-lg font-medium mt-20 mb-8'>You May Also Like</p>
-      <div className='flex flex-wrap max-sm:justify-center gap-8'>
+      {/* List of the recommended movies.... just like from Home Page */}
+      <p className='text-lg font-medium mt-20 mb-8'>You May Also Like / Love the Movies below</p>
+      <div className='flex flex-wrap max-sm:justify-center gap-14'>
         {dummyShowsData.slice(0, 5).map((movie, index)=> (
           <MovieCard key={index} movie={movie} />
         ))}
       </div>
-      <div className='flex justify-center mt-20'> 
+      <div className='flex justify-center mt-10'> 
         <button onClick={()=> {navigate('/movies'); scrollTo(0,0)}} className='px-10 py-3 text-sm bg-primary hover:bg-primary-dull transition rounded-md font-medium cursor-pointer'>Show More</button>
       </div>
     </div>
