@@ -24,14 +24,14 @@ const FeaturedSection = () => {
       </div>
 
       <div className='flex flex-wrap max-sm:justify-center items-center gap-14 mt-8'>
-        {dummyShowsData.slice(0, 6).map((show)=> (
+        {dummyShowsData.slice(0, 7).map((show)=> (
             <MovieCard key={show._id} movie={show}/>
         ))}
       </div>
 
-      <div className='flex justify-center mt-20'>
+      <div className='flex justify-center mt-10'>
         <button onClick={()=>{navigate('/movies'); scrollTo(0,0)}} 
-        className='px-10 py-3 text-sm bg-primary hover:bg-primary-dull transition rounded-md font-medium cursor-pointer'>Show more</button>
+        className='px-8 py-3 text-sm bg-primary hover:bg-primary-dull transition rounded-md font-medium cursor-pointer'>Show more movies</button>
       </div>
     </div>
   )
