@@ -26,7 +26,7 @@ QuickShow is a modern, responsive web application for discovering, booking, and 
 
 2. **Install dependencies:**
    ```bash
-   npm install
+   npm install packages
    ```
 
 3. **Run the app:**
@@ -37,6 +37,8 @@ QuickShow is a modern, responsive web application for discovering, booking, and 
 ## 🚀 User/Profile
 - **Movie TicketApp**  
   <img src="./public/Movie Ticket App Home Page.png" alt="MovieTicketApp" width="900">
+- **Movie Card**
+   <img src="./public/QuickShowMovieCard.png" alt="MovieCard" width="900">
 - **SeatLayOut**
 <img src="./public/SeatLayout.png" alt="SeatLayout" width="900">  
 
