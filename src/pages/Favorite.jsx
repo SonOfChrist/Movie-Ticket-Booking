@@ -8,7 +8,9 @@ const Favorite = () => {
     <div className='relative my-40 mb-60 px-6 md:px-16 lg:px-40 xl:px-44 overflow-hidden min-h-[80vh]'>
       <BlurCircle top='150px' left='0px' />
       <BlurCircle bottom='50px' right='50px' />
-      <h1 className='text-lg font-medium my-4'>Thanks for watching Movies with Us, Here are your Favorites</h1>
+      <h1 className='text-3xl md:text-4xl font-extrabold text-center mb-10 bg-gradient-to-r from-primary via-pink-500 to-white bg-clip-text text-transparent tracking-tight drop-shadow-lg'>
+       Thanks for watching Movies with Us – Here are your Favorites! 
+      </h1>
       <div className='flex flex-wrap max-sm:justify-center gap-14'>
         {dummyShowsData.map((movie) => (
           <MovieCard key={movie._id} movie={movie} />
