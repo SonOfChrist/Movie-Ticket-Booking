@@ -24,6 +24,7 @@ const App = () => {
       <Toaster />
       {!isAdminRoute && <Navbar />}
       <Routes>
+        {/* Public Routes */}
         <Route path="/" element={<Home />} />
         <Route path="/movies" element={<Movies />} />
         <Route path="/movies/:id" element={<MovieDetails />} />
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/my-bookings" element={<MyBookings />} />
         <Route path="/favorite" element={<Favorite />} />
 
+        {/* Admin Routes */}
         <Route path='/admin/*' element={<Layout />}>
           <Route index element={<Dashboard />}/>
           <Route path='add-shows' element={<AddShows />}/>
