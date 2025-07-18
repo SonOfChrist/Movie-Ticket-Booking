@@ -10,7 +10,7 @@ const TrailersSection = () => {
   return (
     <div className="px-6 md:px-16 lg:px-24 xl:px-44 py-20 overflow-hidden">
       <div className="flex items-center gap-4 mb-8">
-        <PlayCircleIcon className="w-10 h-10 drop-shadow-lg animate-pulse" />
+        <PlayCircleIcon className="w-10 h-10 text-primary drop-shadow-lg animate-pulse" />
         <h2 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-primary via-pink-500 to-white bg-clip-text text-transparent tracking-tight drop-shadow-lg">
           Watch the Latest Trailers
         </h2>
@@ -37,7 +37,7 @@ const TrailersSection = () => {
           <div
             key={trailer.image}
             className={`relative group cursor-pointer rounded-xl overflow-hidden shadow-lg border-2 transition-all duration-300
-              ${currentTrailer === trailer ? 'border-primary scale-105 ring-2 ring-pink-400' : 'border-transparent hover:scale-105 hover:border-primary/60'}
+              ${currentTrailer === trailer ? 'scale-105 ring-1 ring-green-400' : 'border-transparent hover:scale-105 hover:border-primary/60'}
             `}
             style={{ width: 200, height: 120 }}
             onClick={() => setCurrentTrailer(trailer)}
@@ -48,8 +48,8 @@ const TrailersSection = () => {
               className={`w-full h-full object-cover brightness-75 transition-all duration-300 ${currentTrailer === trailer ? 'brightness-100' : 'group-hover:brightness-90'}`}
             />
             <PlayCircleIcon
-              strokeWidth={1.6}
-              className={`absolute top-1/2 left-1/2 w-10 h-10 md:w-14 md:h-14 transform -translate-x-1/2 -translate-y-1/2 text-white drop-shadow-lg transition-all duration-300
+              strokeWidth={1.2}
+              className={`absolute top-1/2 left-1/2 w-8 h-18 md:w-14 md:h-14 transform -translate-x-1/2 -translate-y-1/2 text-white drop-shadow-lg transition-all duration-300
                 ${currentTrailer === trailer ? 'text-pink-400 scale-110' : 'opacity-80 group-hover:text-primary'}
               `}
             />
