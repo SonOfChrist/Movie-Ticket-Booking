@@ -34,12 +34,15 @@ QuickShow is a modern, responsive web application for discovering, booking, and 
    npm start
    npm run dev
    ```
-## 🚀 User/Profile
+## 🚀 User/Profile/MovieApp Preview
 - **Movie TicketApp**  
   <img src="./public/Movie Ticket App Home Page.png" alt="MovieTicketApp" width="900">
 - **Movie Card**
    <img src="./public/QuickShowMovieCard.png" alt="MovieCard" width="900">
-- **SeatLayOut**
+- **Movie Trailers**
+ <img src="./public/MoviesTrailerSection.png" alt="MovieTrailers" width="900"> 
+ 
+- **Seat LayOut**
 <img src="./public/SeatLayout.png" alt="SeatLayout" width="900">  
 
 ## Contributing

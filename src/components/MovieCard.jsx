@@ -42,7 +42,7 @@ const MovieCard = ({ movie }) => {
       <div className="flex items-center justify-between px-4 pb-4">
         <button
           onClick={() => { navigate(`/movies/${movie._id}`); scrollTo(0, 0) }}
-          className="flex items-center gap-2 px-5 py-2 text-xs bg-gradient-to-r from-primary via-pink-500 to-pink-400 hover:from-pink-500 hover:to-primary transition rounded-full font-semibold text-white shadow-lg hover:scale-105 duration-200"
+          className="flex items-center gap-2 px-5 py-2 text-xs bg-gradient-to-r from-primary via-pink-500 to-pink-400 hover:from-pink-500 hover:to-primary transition rounded-full font-semibold text-white shadow-lg hover:scale-105 duration-200 cursor-pointer"
         >
           <Ticket className="w-4 h-4" />
           Buy Tickets

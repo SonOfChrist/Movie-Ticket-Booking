@@ -82,7 +82,7 @@ const Footer = () => {
                         <h2 className="font-bold text-lg mb-4 text-primary">Contact Us</h2>
                         <div className="text-base space-y-2">
                         <p className="flex items-center gap-2 hover:text-gray-800 transition cursor-pointer"><span role="img" aria-label="phone">📞</span> +254-743-587-157</p>
-                        <p className="flex items-center gap-2 hover:text-gray-800 transition cursor-pointer"><span role="img" aria-label="email">✉️</span> support@quickshow.com</p>
+                        <p className="flex items-center gap-2 hover:text-gray-800 transition cursor-pointer"><span role="img" aria-label="email">✉️</span> mochogestanley80@gmail.com</p>
                         <p className="flex items-center gap-2 hover:text-gray-800 transition cursor-pointer"><span role="img" aria-label="location">📍</span>Location Nairobi, Kenya - 00100</p>
                         </div>
                     </div>
