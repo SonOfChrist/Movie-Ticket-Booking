@@ -35,7 +35,7 @@ const Dashboard = () => {
 
   return !loading ? (
     <>
-     <Title text1="Admin" text2="Dashboard"/>
+     <Title text1="Admin" text2="Dashboard - (This illusion is an illusion )"/>
      <div>
       <div className='relative flex flex-wrap gap-4 mt-6'>
         <BlurCircle top="-100px" left="0" />
